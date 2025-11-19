@@ -20,7 +20,6 @@ export default function ProductsCardsPage() {
 
   const { page, searchTerm, minPrice, maxPrice, view } = state;
 
-  // 🧠 Fetch logged-in user and permissions
   const { data: userData } = useApi("/user/profile", "GET", []);
   const user = userData?.user || null;
   const userPermissions = user?.permissions || [];
