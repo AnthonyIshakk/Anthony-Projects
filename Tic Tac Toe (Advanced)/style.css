@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+    color: #f5f5f5;
+}
+
+main {
+    background: #121212;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#header {
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+#header .player {
+    background: #2b1e3d;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 12px;
+    border: solid 3px #2b1e3d;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+#header .player:hover {
+    border: solid 3px #3d2a58;
+}
+
+#header .player-active {
+    opacity: 1;
+    border: solid 3px #3d2a58;
+}
+
+.level {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.level button {
+    background: #2b1e3d;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s background;
+    width: 80px;
+    margin-bottom: 50px;
+}
+
+.level button:hover {
+    background: #3d2a58;
+}
+
+#header #xPlayerDisplay {
+    color: #64c7ff;
+}
+
+#header #oPlayerDisplay {
+    color: #d76bff;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: repeat(3, 80px);
+    gap: 10px;
+}
+
+#board .cell {
+    background: #2b1e3d;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 38px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s background-color;
+}
+
+#board .cell:hover {
+    background-color: #3d2a58;
+}
+
+#RestartBtn {
+    margin-top: 35px;
+    width: 250px;
+    background: #2b1e3d;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s background;
+    visibility: hidden;
+}
+
+#RestartBtn:hover {
+    background: #3d2a58;
+}
