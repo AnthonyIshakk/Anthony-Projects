@@ -24,7 +24,6 @@ export default function ProductsCardsPage() {
   const user = userData?.user || null;
   const userPermissions = user?.permissions || [];
 
-  // 🧩 Permission checks
   const canView = userPermissions.includes("view_product");
   const canCreate = userPermissions.includes("create_product");
 
